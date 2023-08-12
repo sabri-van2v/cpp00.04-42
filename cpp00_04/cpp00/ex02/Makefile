@@ -1,8 +1,8 @@
-SRCS = 	megaphone.cpp
+SRCS = 	Account.cpp tests.cpp
 
 OBJS = 	${SRCS:%.cpp=%.o}
 
-NAME = 	megaphone
+NAME = 	Account
 
 CC 	= 	c++
 
@@ -21,3 +21,7 @@ clean:
 
 fclean: clean
 	 ${RM} ${NAME}
+
+re:			fclean all
+
+.PHONY:		fclean, all, re
