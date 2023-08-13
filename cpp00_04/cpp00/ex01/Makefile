@@ -10,7 +10,7 @@ CFLAGS = -Wall -Wextra -Werror -std=c++98
 
 HEADERS = Contact.hpp PhoneBook.hpp
 
-%.o: %.cpp ${HEADERS} Makefile
+%.o: %.cpp ${HEADERS}
 	${CC} ${CFLAGS} -c $< -o $@ -I.
 
 ${NAME}: ${OBJS}

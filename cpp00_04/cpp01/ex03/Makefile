@@ -1,14 +1,14 @@
-SRCS = 	Account.cpp tests.cpp
+SRCS = 	main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
 
 OBJS = 	${SRCS:%.cpp=%.o}
 
-NAME = 	Account
+NAME =	Violence
 
 CC 	= 	c++
 
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
-HEADERS = Account.hpp
+HEADERS = Weapon.hpp HumanA.hpp HumanB.hpp
 
 %.o: %.cpp ${HEADERS}
 	${CC} ${CFLAGS} -c $< -o $@ -I.
@@ -24,6 +24,6 @@ clean:
 fclean: clean
 	 ${RM} ${NAME}
 
-re:	fclean all
+re : fclean all
 
 .PHONY : all clean fclean re

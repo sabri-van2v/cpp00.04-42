@@ -1,16 +1,14 @@
-SRCS = 	Account.cpp tests.cpp
+SRCS = 	main.cpp 
 
 OBJS = 	${SRCS:%.cpp=%.o}
 
-NAME = 	Account
+NAME =	file
 
 CC 	= 	c++
 
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
-HEADERS = Account.hpp
-
-%.o: %.cpp ${HEADERS}
+%.o: %.cpp
 	${CC} ${CFLAGS} -c $< -o $@ -I.
 
 ${NAME}: ${OBJS}
@@ -24,6 +22,6 @@ clean:
 fclean: clean
 	 ${RM} ${NAME}
 
-re:	fclean all
+re : fclean all
 
 .PHONY : all clean fclean re
