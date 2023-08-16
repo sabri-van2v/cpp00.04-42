@@ -2,7 +2,7 @@ SRCS = 	main.cpp Fixed.cpp Point.cpp bsp.cpp
 
 OBJS = 	${SRCS:%.cpp=%.o}
 
-NAME =	Fixed
+NAME =	bsp
 
 CC 	= 	c++
 
