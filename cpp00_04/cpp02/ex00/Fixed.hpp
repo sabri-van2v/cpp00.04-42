@@ -13,6 +13,7 @@ class Fixed
     ~Fixed();
     int     getRawBits(void);
     void    setRawBits(int const raw);
+    float   toFloat(void) const;
 
     private:
 

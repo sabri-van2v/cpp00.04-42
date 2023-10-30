@@ -2,9 +2,9 @@
 
 int main()
 {
-    Zombie *Pablo = zombieHorde(4, "Pablo");
+    Zombie *Pierre = zombieHorde(4, "Pierre");
 
     for (int i = 0; i < 4; i++)
-        Pablo[i].announce();
-    delete [] Pablo;
+        Pierre[i].announce();
+    delete [] Pierre;
 }

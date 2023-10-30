@@ -5,7 +5,7 @@ Fixed::Fixed(int value):_value(value)
     std::cout << "Default constructor called\n";
 }
 
-Fixed::Fixed(const Fixed &number)
+Fixed::Fixed(Fixed &number)
 {
     std::cout << "Copy constructor called\n";
     *this = number;
@@ -33,6 +33,11 @@ void    Fixed::setRawBits(int const raw)
 {
     std::cout << "setRawBits member function called\n";
     _value = raw;
+}
+
+float Fixed::toFloat(void) const
+{
+    return (float(_value) / (1 << _nb_bits));
 }
 
 std::ostream& operator<<(std::ostream& o, const Fixed& fixed)

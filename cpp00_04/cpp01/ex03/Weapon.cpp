@@ -1,6 +1,6 @@
 #include "Weapon.hpp"
 
-Weapon::Weapon(): _type("his fits"){}
+Weapon::Weapon(): _type("his fist"){}
 
 Weapon::Weapon(std::string str): _type(str){}
 

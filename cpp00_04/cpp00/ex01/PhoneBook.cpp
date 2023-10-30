@@ -37,13 +37,16 @@ void    PhoneBook::print_column(std::string str)
 
 void    PhoneBook::print_phonebook()
 {
-    char    c;
+    char        c;
 
     for(int i = 0; i < 8 && i < _index; i++)
     {
         std::cout << '|';
+        for (int i = 0; i < 9; i++)
+            std::cout << ' ';
         c = i + 1 + '0';
-        print_column(&c);
+        std::cout << c;
+        std::cout << '|';
         print_column(_contact[i].get_first_name());
         print_column(_contact[i].get_last_name());
         print_column(_contact[i].get_nickname());

@@ -15,11 +15,6 @@ float get_area(Point a, Point b, Point c)
     return (std::sqrt(half * (half - ab) * (half - bc) * (half - ac)));
 }
 
-// float   barycentric(float area_p, float area)
-// {
-//     return (area_p / area);
-// }
-
 bool    borders(float abp, float bcp, float acp)
 {
     return (!(abp and bcp and acp));

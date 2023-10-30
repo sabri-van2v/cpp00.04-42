@@ -20,5 +20,5 @@ void    HumanB::attack()
     if (_weapon)
         std::cout << _name << " attacks with their " << _weapon->getType() << std::endl;
     else
-        std::cout << _name << " attacks with their " << "his fits" << std::endl;
+        std::cout << _name << " attacks with their " << "his fist" << std::endl;
 }
