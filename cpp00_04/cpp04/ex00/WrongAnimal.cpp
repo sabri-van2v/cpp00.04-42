@@ -13,7 +13,7 @@ WrongAnimal::WrongAnimal(WrongAnimal const &a)
 
 WrongAnimal::~WrongAnimal()
 {
-    std::cout << "Animal destructor\n";
+    std::cout << "WrongAnimal destructor\n";
 }
 
 WrongAnimal &WrongAnimal::operator=(WrongAnimal const &a)
